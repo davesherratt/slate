@@ -241,6 +241,20 @@
           <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="errors">Errors</a>
           </li>
+          <li>
+            <a href="#config-file" class="toc-h1 toc-link" data-title="config-file">Config File</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#twist-specific-configuration" class="toc-h2 toc-link" data-title="twist-specific-configuration">Twist specific configuration</a>
+                  </li>
+                  <li>
+                    <a href="#spin-specific-configuration" class="toc-h2 toc-link" data-title="spin-specific-configuration">Spin specific configuration</a>
+                  </li>
+                  <li>
+                    <a href="#collect-specific-configuration" class="toc-h2 toc-link" data-title="collect-specific-configuration">Collect specific configuration</a>
+                  </li>
+              </ul>
+          </li>
       </div>
         <ul class="toc-footer">
             <li><a href='https://devs.paymentloyalty.com/support'>Payment Loyalty Support</a></li>
@@ -488,6 +502,172 @@
 <td>503</td>
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
+</tbody></table>
+<h1 id='config-file'>Config File</h1>
+<blockquote>
+<p>Example configuration file</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<aside class="notice">
+Need input for this section
+</aside>
+
+<p>All game configuration is available through this file. The file is version specific, for each update a new file is created.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>gameType</td>
+<td>String</td>
+<td>Game specified, Twist, Spin, Collect</td>
+</tr>
+<tr>
+<td>receiptImg</td>
+<td>String</td>
+<td>base64 of image</td>
+</tr>
+<tr>
+<td>receiptImgWidth</td>
+<td>Integer</td>
+<td>Image width</td>
+</tr>
+<tr>
+<td>receiptImgHeight</td>
+<td>Integer</td>
+<td>Image height</td>
+</tr>
+<tr>
+<td>receiptHeaderText</td>
+<td>String</td>
+<td>Winner message, with param for prize</td>
+</tr>
+<tr>
+<td>receiptBodyText</td>
+<td>String</td>
+<td>Text to be printed, specifying prize</td>
+</tr>
+<tr>
+<td>receiptTCURI</td>
+<td>String</td>
+<td>URI for T&amp;C&#39;s</td>
+</tr>
+<tr>
+<td>redemptionType</td>
+<td>String</td>
+<td>Fixed or Sliding redemption window NB: This dictates if redemptionStart &amp; redemptionFinish or redemptionWindowStart &amp; redemptionWindowFinish params are returned</td>
+</tr>
+<tr>
+<td>redemptionStart</td>
+<td>Date</td>
+<td>Start of redemption window</td>
+</tr>
+<tr>
+<td>redemptionFinish</td>
+<td>Date</td>
+<td>End of redemption window</td>
+</tr>
+<tr>
+<td>redemptionWindowStart</td>
+<td>Integer</td>
+<td>Days after prize issuance redemption window starts</td>
+</tr>
+<tr>
+<td>redemptionWindowFinish</td>
+<td>Integer</td>
+<td>Days after prize issuance redemption windows finishs</td>
+</tr>
+<tr>
+<td>headerImg</td>
+<td>Integer</td>
+<td>base64 of header image</td>
+</tr>
+<tr>
+<td>headerImgWidth</td>
+<td>Integer</td>
+<td>Image width</td>
+</tr>
+<tr>
+<td>headerImgHeight</td>
+<td>Integer</td>
+<td>Image height</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>String</td>
+<td>Currency of game</td>
+</tr>
+</tbody></table>
+<h2 id='twist-specific-configuration'>Twist specific configuration</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>cardCount</td>
+<td>Integer</td>
+<td>Number of cards for game</td>
+</tr>
+<tr>
+<td>cardImage</td>
+<td>String</td>
+<td>base64 of card image</td>
+</tr>
+<tr>
+<td>cardImgWidth</td>
+<td>Integer</td>
+<td>Image width</td>
+</tr>
+<tr>
+<td>cardImgHeight</td>
+<td>Integer</td>
+<td>Image height</td>
+</tr>
+<tr>
+<td>prizeImage</td>
+<td>String</td>
+<td>base64 of prize image</td>
+</tr>
+<tr>
+<td>prizeImgWidth</td>
+<td>Integer</td>
+<td>Image width</td>
+</tr>
+<tr>
+<td>prizeImgHeight</td>
+<td>Integer</td>
+<td>Image height</td>
+</tr>
+</tbody></table>
+<h2 id='spin-specific-configuration'>Spin specific configuration</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+<h2 id='collect-specific-configuration'>Collect specific configuration</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
 </tbody></table>
 
       </div>
